@@ -1,2 +1,2 @@
 # Web_Artstation_Generator
- Display random arts on web page
+ Display random arts from Artstation on web page
