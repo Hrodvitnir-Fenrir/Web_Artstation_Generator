@@ -87,14 +87,21 @@ i {
 
 img {
     width: 27vh;
+    z-index: 99;
 }
 
 p {
     z-index: 100;
     text-align: center;
     color: #13aff0;
-    background-color: #171717;
+    background-color: #1717172d;
     border-radius: 20px;
+    margin-top: -50px;
+}
+
+p::before {
+    content: "";
+    background-color: #171717;
 }
 
 
