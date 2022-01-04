@@ -35,11 +35,11 @@ h1 {
     flex-grow: 4;
 }
 
-a {
+.redirect {
     color: #13aff0;
     text-align: right;
     align-self: flex-end;
-    margin: 0% 2%;
+    margin: 0% 2% 1% 2%;
 }
 
 /* RANDOM BUTTON */
@@ -47,7 +47,7 @@ a {
 .randomizer {
     display: inline-block;
     background-color: #171717;
-    margin: 2% 0% 0% 2%;
+    margin: 1.5% 0% 0% 1.5%;
     padding: 0.8%;
     border-radius: 50%;
     position:fixed;
@@ -58,20 +58,20 @@ a {
     box-shadow: 3px 3px 1px 1px rgba(17, 17, 17, 0.3);
 }
 
-
-
 i {
     color: #13aff0;
     font-size: 2rem;
 }
 
+/* CONTENT */
 
 .containers {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 1% 1% 0% 8%;
+    margin-top: 1%;
+    margin-left: 5%;
     align-items: flex-start;
     align-content: center;
     
@@ -81,52 +81,40 @@ i {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0% 1% 2% 1%;
+    padding: 0% 0.1% 0% 0.1%;
     align-content: center;
+}
+
+.contain1:hover > a > p {
+    opacity: 1;
+    animation-name: hoverImages;
+    animation-duration: 0.3s;
+}
+
+@keyframes hoverImages {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 
 img {
     width: 27vh;
-    z-index: 99;
-}
-
-p {
-    z-index: 100;
-    text-align: center;
-    color: #13aff0;
-    background-color: #1717172d;
-    border-radius: 20px;
-    margin-top: -50px;
-}
-
-p::before {
-    content: "";
-    background-color: #171717;
-}
-
-
-
-
-
-/* .contain1 {
-    position: relative;
-    display: inline-block;
-    margin: 1%;
 }
 
 .contain1 > a {
-    width: 30vh;
-    left: 0%;
-    top: 0%;
+    text-decoration: none;
 }
 
-img {
-    width: 30vh;
-}
-
-.text {
-    position: absolute;
+p {
     text-align: center;
-    color: white;
-    background:rgba(0, 0, 0, 0.404);
-} */
+    color: #13aff0;
+    background: linear-gradient(rgba(22, 22, 22, 0.692), rgb(22, 22, 22));
+    margin-top: -42px;
+    opacity: 0;
+    width: 27vh;
+    overflow-wrap: anywhere;
+}
+
