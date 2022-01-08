@@ -25,8 +25,9 @@ header > div {
 }
 
 .icon {
-    width: 10%;
-    margin: 1% 1%;
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    margin: 15px;
 }
 
 h1 {
@@ -74,7 +75,6 @@ i {
     margin-left: 5%;
     align-items: flex-start;
     align-content: center;
-    
 }
 
 .contain1 {
@@ -83,38 +83,46 @@ i {
     text-align: center;
     padding: 0% 0.1% 0% 0.1%;
     align-content: center;
+    position: relative;
+    width: 27vh;
+    aspect-ratio: 1 / 1;
+    margin: 2.5px;
+}
+
+.contain1 > a > p {
+    opacity: 0;
+    transition: .3s;
 }
 
 .contain1:hover > a > p {
     opacity: 1;
-    animation-name: hoverImages;
-    animation-duration: 0.3s;
 }
 
-@keyframes hoverImages {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
-
-img {
-    width: 27vh;
+.pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .contain1 > a {
     text-decoration: none;
+    width: 100%;
 }
 
 p {
     text-align: center;
     color: #13aff0;
     background: linear-gradient(rgba(22, 22, 22, 0.692), rgb(22, 22, 22));
-    margin-top: -42px;
+    /* margin-top: -42px; */
     opacity: 0;
-    width: 27vh;
-    overflow-wrap: anywhere;
-}
 
+    overflow-wrap: anywhere;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}

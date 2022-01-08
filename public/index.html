@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Leandre B.">
+        <meta name="description" content="Générateur aléatoire d'artwork depuis ArtStation">
+        <meta name="copyright" content="Leandre B.">
+
+        <meta name="theme-color" content="#cc6600">
+
+        <meta property="og:title" content="ArtStation Generator">
+        <meta property="og:type" content="website">
+        <!-- <meta property="og:site_name" content="L'arbre à vin"> -->
+        <meta property="og:description" content="Générateur aléatoire d'artwork depuis ArtStation">
+        <meta property="og:url" content="https://larbreavin.ddns.net/Artstation_Random/">
+        <meta property="og:locale" content="fr">
+        <meta property="og:image" content="https://larbreavin.ddns.net/Artstation_Random/icon.png">
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ArtStation Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="icon.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/209a32a587.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img src="icon.png" class="icon">
+                <h1>
+                    Découvre des artwork aléatoirement !
+                </h1>
+                <a href="https://www.artstation.com/?sort_by=trending" class="redirect" target="_blank">
+                    <h2>
+                        Site officiel d'artstation
+                    </h2>
+                </a>
+            </div>
+        </header>
+
+        <div class="randomizer" id="randomButton">
+            <i class="fas fa-random"></i>
+        </div>
+
+        <div class="containers" id="contain"></div>
+
+        <div id="model" style="display: none;">
+            <div class="contain1">
+                <a href="" target="_black" class="redirect1">
+                    <img class="pic" src="small_square.png" alt="404 not found">
+                </a>
+                <a href="" target="_black" class="redirect2">
+                    <p class="text"></p>
+                </a>
+            </div>
+        </div>
+
+        <script src='script.js'></script>
+    </body>
+</html>
