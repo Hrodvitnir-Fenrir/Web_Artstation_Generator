@@ -6,7 +6,7 @@ async function loadImages(images, redirect1, redirect2, text) {
     text.innerHTML = response.data.user.username + " - " + response.data.title;
 }
 
-function initialisation() {
+async function initialisation() {
     const images = document.getElementsByClassName("pic");
     const redirect1 = document.getElementsByClassName("redirect1");
     const redirect2 = document.getElementsByClassName("redirect2");
